@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>webPro</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- wEB xml로 매핑하기 
+  서블릿 문법
+  <servlet>
+  	<servlet-name>별칭</servlet-name>
+  	<servlet-class>패키지명.서블릿명</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>별칭</servlet-name>
+	<url-pattern>url주소</url-pattern>
+  </servlet-mapping>-->
+  
+  <servlet>
+  	<servlet-name>myInfo</servlet-name>
+  	<servlet-class>ch17.ServletEx03</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>myInfo</servlet-name>
+	<url-pattern>/myInfo</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
